@@ -5,20 +5,9 @@
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
   \*****************************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-// require('./bootstrap');
-__webpack_require__(/*! ./slider */ "./resources/js/slider.js");
-
-/***/ }),
-
-/***/ "./resources/js/slider.js":
-/*!********************************!*\
-  !*** ./resources/js/slider.js ***!
-  \********************************/
 /***/ (() => {
 
-console.log("SLIDER");
+// require('./bootstrap');
 
 /***/ }),
 

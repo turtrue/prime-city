@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap);
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -338,6 +339,93 @@ template {
   display: none;
 }
 
+html {
+  font-size: calc(1vw + 10.6px);
+}
+
 body {
-  background: black;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+  color: #333;
+  background: url("/img/bg-body.jpg");
+}
+
+*,
+*:before,
+*:after,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1320px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, white 10%, white 90%, rgba(255, 255, 255, 0) 100%);
+}
+
+.reset-bg {
+  background: none;
+}
+
+.header {
+  padding: 60px 0;
+  background: linear-gradient(180deg, #dcdadb 0%, #dcdadb 60%, rgba(220, 218, 219, 0) 100%);
+}
+.header__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header__menu {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.header__menu button {
+  margin-right: 0.2em;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.header__logo img {
+  margin-right: 0.8em;
+}
+.header__logo h1 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.header__logo h2 {
+  font-size: 0.6rem;
+  font-weight: 300;
+}
+.header__contact {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+.header__contact address {
+  font-style: normal;
 }

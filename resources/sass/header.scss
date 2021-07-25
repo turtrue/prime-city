@@ -1,0 +1,55 @@
+.header {
+    padding: 60px 0;
+
+    background: linear-gradient(
+        180deg,
+        rgba($gray, 1) 0%,
+        rgba($gray, 1) 60%,
+        rgba($gray, 0) 100%
+    );
+
+    &__content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__menu {
+        font-size: 1rem;
+        font-weight: 300;
+        text-transform: uppercase;
+
+        button {
+            margin-right: 0.2em;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: 0.8em;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        h2 {
+            font-size: 0.6rem;
+            font-weight: 300;
+        }
+    }
+
+    &__contact {
+        font-size: 0.8rem;
+        font-weight: 300;
+
+        address {
+            font-style: normal;
+        }
+    }
+}
