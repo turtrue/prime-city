@@ -342,8 +342,14 @@ template {
 html {
   font-size: calc(1vw + 10.6px);
 }
+@media (min-width: 1440px) {
+  html {
+    font-size: 25px;
+  }
+}
 
 body {
+  position: relative;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1rem;
   color: #333;
@@ -371,6 +377,7 @@ ul {
 button {
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 a {
@@ -380,20 +387,38 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 0.6em;
   max-width: 1320px;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, white 10%, white 90%, rgba(255, 255, 255, 0) 100%);
 }
-
-.reset-bg {
+.container--bg-none {
   background: none;
+}
+.container--advantage {
+  padding: 8.6em 0.6em 1.6em;
+}
+.container--partner {
+  padding-bottom: 8.8em;
+}
+.container--certificate {
+  padding-bottom: 13em;
+}
+
+.title-section {
+  font-size: 2.6rem;
+  font-weight: 400;
+  text-align: center;
 }
 
 .header {
-  padding: 60px 0;
-  background: linear-gradient(180deg, #dcdadb 0%, #dcdadb 60%, rgba(220, 218, 219, 0) 100%);
+  padding: 2.4em 0 3.2em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(180deg, #dcdadb 0%, #dcdadb 70%, rgba(220, 218, 219, 0) 100%);
 }
-.header__content {
+.header__body {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -402,9 +427,11 @@ a {
   font-size: 1rem;
   font-weight: 300;
   text-transform: uppercase;
+  cursor: pointer;
 }
-.header__menu button {
-  margin-right: 0.2em;
+.header__menu img {
+  width: 0.8em;
+  display: block;
 }
 .header__logo {
   display: flex;
@@ -412,6 +439,7 @@ a {
 }
 .header__logo img {
   margin-right: 0.8em;
+  width: 2.4em;
 }
 .header__logo h1 {
   font-size: 1.4rem;
@@ -428,4 +456,160 @@ a {
 }
 .header__contact address {
   font-style: normal;
+}
+
+.advantage__body {
+  margin: 1.8em auto 0;
+  width: 32em;
+  height: 24em;
+  position: relative;
+  background: center/cover url("/img/advantage-bg.jpg");
+  border-radius: 0.4em;
+}
+.advantage__icons {
+  position: absolute;
+  top: 50%;
+  right: 1.6em;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.advantage__icons div + div {
+  margin-top: 1.4em;
+}
+.advantage__icon {
+  width: 1.4em;
+}
+.advantage__icon-2 {
+  width: 2em;
+}
+.advantage__icon-3 {
+  width: 2em;
+}
+.advantage__text {
+  padding: 2em 3.2em;
+  width: 28em;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  font-weight: 300;
+  background: center/cover url("/img/fog.png");
+}
+
+.partner__body {
+  margin: 0 auto;
+  width: 32em;
+  display: flex;
+  flex-wrap: wrap;
+}
+.partner__item {
+  margin-top: 3.2em;
+  width: 33.333%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partner__icon {
+  width: 4em;
+}
+.partner__icon-2 {
+  width: 6.68em;
+}
+.partner__icon-3 {
+  width: 7em;
+}
+.partner__icon-4 {
+  width: 9.36em;
+}
+.partner__icon-5 {
+  width: 9em;
+}
+.partner__icon-6 {
+  width: 9em;
+}
+
+.certificate__body {
+  margin-top: 3.76em;
+}
+
+.footer {
+  padding: 3.2em 0 2.4em;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(0deg, #dcdadb 0%, #dcdadb 70%, rgba(220, 218, 219, 0) 100%);
+}
+.footer__body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer__logo {
+  display: flex;
+  align-items: center;
+}
+.footer__logo img {
+  margin-right: 0.8em;
+  width: 2.4em;
+}
+.footer__logo h1 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.footer__logo h2 {
+  font-size: 0.6rem;
+  font-weight: 300;
+}
+.footer__author {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+.footer__contact {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+.footer__contact address {
+  font-style: normal;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+.slider__track {
+  width: 133.322%;
+  display: flex;
+}
+.slider__item {
+  width: 33.333%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider__item.active img {
+  max-width: 14.8em;
+}
+.slider__item img {
+  max-width: 8.8em;
+}
+.slider__arrow {
+  padding: 0.6em 0.4em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffffff;
+  box-shadow: 0px 2.63415px 2.63415px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+.slider__arrow img {
+  display: block;
+}
+.slider__arrow--prev {
+  left: 14em;
+}
+.slider__arrow--next {
+  right: 14em;
 }

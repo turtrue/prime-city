@@ -1,9 +1,9 @@
 @extends('layouts.master')
 
-@section('title', 'Prime City')
+@section('title', 'Премьер Сити - строительная компания')
 
 @section('content')
-<div class="container">
-    <!-- <p>This is my body content.</p> -->
-</div>
+@include('blocks.advantage')
+@include('blocks.partner')
+@include('blocks.certificate')
 @endsection

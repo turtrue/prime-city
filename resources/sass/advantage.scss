@@ -1,0 +1,46 @@
+.advantage {
+    &__body {
+        margin: 1.8em auto 0;
+        width: 32em;
+        height: 24em;
+        position: relative;
+        background: center / cover url("/img/advantage-bg.jpg");
+        border-radius: 0.4em;
+    }
+
+    &__icons {
+        position: absolute;
+        top: 50%;
+        right: 1.6em;
+        transform: translateY(-50%);
+        text-align: center;
+
+        div + div {
+            margin-top: 1.4em;
+        }
+    }
+
+    &__icon {
+        width: 1.4em;
+    }
+
+    &__icon-2 {
+        width: 2em;
+    }
+
+    &__icon-3 {
+        width: 2em;
+    }
+
+    &__text {
+        padding: 2em 3.2em;
+        width: 28em;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1rem;
+        font-weight: 300;
+        background: center / cover url("/img/fog.png");
+    }
+}

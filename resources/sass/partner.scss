@@ -1,0 +1,40 @@
+.partner {
+    &__body {
+        margin: 0 auto;
+        width: 32em;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        margin-top: 3.2em;
+        width: 33.333%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon {
+        width: 4em;
+    }
+
+    &__icon-2 {
+        width: 6.68em;
+    }
+
+    &__icon-3 {
+        width: 7em;
+    }
+
+    &__icon-4 {
+        width: 9.36em;
+    }
+
+    &__icon-5 {
+        width: 9em;
+    }
+
+    &__icon-6 {
+        width: 9em;
+    }
+}

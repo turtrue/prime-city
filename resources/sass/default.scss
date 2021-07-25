@@ -2,17 +2,18 @@
 
 $white: white;
 $darkGray: #333;
-$gray: #dcdadb;
+$lightGray: #dcdadb;
 
 html {
     font-size: calc(1vw + 10.6px);
 
-    // @media (min-width: 1440px) {
-    //     font-size: 25px;
-    // }
+    @media (min-width: 1440px) {
+        font-size: 25px;
+    }
 }
 
 body {
+    position: relative;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 1rem;
     color: $darkGray;
@@ -40,6 +41,7 @@ ul {
 button {
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 a {
@@ -49,7 +51,7 @@ a {
 
 .container {
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 0.6em;
     max-width: 1320px;
     background: linear-gradient(
         90deg,
@@ -58,8 +60,26 @@ a {
         rgba($white, 1) 90%,
         rgba($white, 0) 100%
     );
+
+    &--bg-none {
+        background: none;
+    }
+
+    &--advantage {
+        padding: 8.6em 0.6em 1.6em;
+    }
+
+    &--partner {
+        padding-bottom: 8.8em;
+    }
+
+    &--certificate {
+        padding-bottom: 13em;
+    }
 }
 
-.reset-bg {
-    background: none;
+.title-section {
+    font-size: 2.6rem;
+    font-weight: 400;
+    text-align: center;
 }

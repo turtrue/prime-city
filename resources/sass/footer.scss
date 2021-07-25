@@ -1,11 +1,11 @@
-.header {
-    padding: 2.4em 0 3.2em;
+.footer {
+    padding: 3.2em 0 2.4em;
     position: absolute;
-    top: 0;
     right: 0;
+    bottom: 0;
     left: 0;
     background: linear-gradient(
-        180deg,
+        0deg,
         rgba($lightGray, 1) 0%,
         rgba($lightGray, 1) 70%,
         rgba($lightGray, 0) 100%
@@ -15,18 +15,6 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-    }
-
-    &__menu {
-        font-size: 1rem;
-        font-weight: 300;
-        text-transform: uppercase;
-        cursor: pointer;
-
-        img {
-            width: 0.8em;
-            display: block;
-        }
     }
 
     &__logo {
@@ -39,7 +27,7 @@
         }
 
         h1 {
-            font-size: 1.4rem;
+            font-size: 1rem;
             text-transform: uppercase;
             white-space: nowrap;
         }
@@ -48,6 +36,11 @@
             font-size: 0.6rem;
             font-weight: 300;
         }
+    }
+
+    &__author {
+        font-size: 0.8rem;
+        font-weight: 300;
     }
 
     &__contact {
