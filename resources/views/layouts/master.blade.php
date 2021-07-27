@@ -12,11 +12,14 @@
 
 <body>
     <header class="header">
-        <div class="container container--bg-none">
+        <div class="container">
             <div class="header__body">
                 <div class="header__menu">
                     <button>
-                        <img src="{{ asset("img/burger.svg") }}" alt="бургер меню"></button>
+                        <hr>
+                        <hr>
+                        <hr>
+                    </button>
                     <span>Меню</span>
                 </div>
                 <div class="header__logo">
@@ -30,6 +33,32 @@
                     <address>Казань, ул. Х.Такташа, д. 78</address>
                     <div><a href="tel:+7 (843) 278-01-91">+7 (843) 278-01-91</a></div>
                     <div><a href="tel:+7 (917) 874-80-61">+7 (917) 874-80-61</a></div>
+                </div>
+            </div>
+
+            <div class="nav">
+                <div class="nav__body">
+                    <ul>
+                        <li class="nav__title">Главная</li>
+                        <li><a href="#">Сертификаты</a></li>
+                        <li><a href="#">Партнеры</a></li>
+                    </ul>
+                    <ul>
+                        <li class="nav__title">Наши услуги</li>
+                        <li><a href="#">Обустройство газовых и нефтяных месторождений</a></li>
+                        <li><a href="#">Прокладка и монтаж трубопроводов различной степени отвественности</a></li>
+                        <li><a href="#">Строительство и монтаж ВЛ до 220 кв</a></li>
+                        <li><a href="#">Общестроительные работы</a></li>
+                        <li><a href="#">Аренда спецтехники</a></li>
+                        <li><a href="#">Мобильная лаборатория НК</a></li>
+                    </ul>
+                    <ul>
+                        <li class="nav__title">О компании</li>
+                        <li><a href="#">Значимые объекты</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
                 </div>
             </div>
         </div>

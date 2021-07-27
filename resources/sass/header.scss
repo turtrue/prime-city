@@ -11,21 +11,53 @@
         rgba($lightGray, 0) 100%
     );
 
+    &.active {
+        position: fixed;
+        bottom: 0;
+        z-index: 1000;
+        color: $white;
+        background: $darkBlue;
+
+        hr {
+            background: $white;
+        }
+
+        a {
+            color: $white;
+        }
+
+        .nav {
+            display: block;
+        }
+    }
+
     &__body {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
     }
 
     &__menu {
+        display: flex;
+        align-items: center;
         font-size: 1rem;
         font-weight: 300;
         text-transform: uppercase;
         cursor: pointer;
 
-        img {
+        button {
+            margin-right: 0.2em;
+        }
+
+        hr {
             width: 0.8em;
-            display: block;
+            height: 1px;
+            border: none;
+            background: $darkGray;
+        }
+
+        hr + hr {
+            margin-top: 0.2em;
         }
     }
 
