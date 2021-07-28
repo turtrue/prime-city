@@ -396,22 +396,21 @@ a {
 .container {
   margin: 0 auto;
   padding: 0 0.6em;
-  max-width: 1320px;
-}
-.container--advantage {
-  padding: 8.6em 0.6em 1.6em;
-}
-.container--partner {
-  padding-bottom: 8.8em;
-}
-.container--certificate {
-  padding-bottom: 13em;
+  max-width: 1200px;
 }
 
 .title-section {
   font-size: 2.6rem;
   font-weight: 400;
   text-align: center;
+}
+.title-section--min {
+  font-size: 2em;
+  text-align: initial;
+}
+
+.help-height {
+  height: 8.8em;
 }
 
 .header {
@@ -514,6 +513,9 @@ a {
   color: #bdd0f5;
 }
 
+.advantage {
+  padding-bottom: 1.6em;
+}
 .advantage__body {
   margin: 1.8em auto 0;
   width: 32em;
@@ -553,6 +555,9 @@ a {
   background: center/cover url("/img/fog.png");
 }
 
+.partner {
+  padding-bottom: 8.8em;
+}
 .partner__body {
   margin: 0 auto;
   width: 32em;
@@ -668,8 +673,25 @@ a {
   display: block;
 }
 .slider__arrow--prev {
-  left: 14em;
+  left: 13em;
 }
 .slider__arrow--next {
-  right: 14em;
+  right: 13em;
+}
+
+.service__section + .service__section {
+  margin-top: 4.4em;
+}
+.service__item {
+  margin-top: 3em;
+}
+.service__title {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.service__block {
+  margin-top: 2em;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.3;
 }

@@ -1,5 +1,5 @@
 <div class="partner">
-    <div class="container container--partner">
+    <div class="container">
         <h1 class="title-section">Партнеры</h1>
 
         <div class="partner__body">

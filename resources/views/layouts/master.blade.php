@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <div class="help-height"></div>
     <header class="header">
         <div class="container">
             <div class="header__body">
@@ -87,7 +88,7 @@
             </div>
         </div>
     </footer>
-
+    <div class="help-height"></div>
     <script src="{{ asset("js/app.js") }}"></script>
 </body>
 

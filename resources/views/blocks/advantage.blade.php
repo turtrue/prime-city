@@ -1,5 +1,5 @@
 <div class="advantage">
-    <div class="container container--advantage">
+    <div class="container">
         <h1 class="title-section">Наши преимущества</h1>
 
         <div class="advantage__body">

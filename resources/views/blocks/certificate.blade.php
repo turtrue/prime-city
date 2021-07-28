@@ -1,5 +1,5 @@
 <div class="certificate">
-    <div class="container container--certificate">
+    <div class="container">
         <h1 class="title-section">Сертификаты</h1>
 
         <div class="certificate__body">

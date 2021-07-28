@@ -3,5 +3,5 @@
 @section('title', 'Наши услуги')
 
 @section('content')
-<!-- @include('blocks.advantage') -->
+@include('blocks.service')
 @endsection
