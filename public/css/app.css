@@ -409,6 +409,11 @@ a {
   text-align: initial;
 }
 
+.title-item {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
 .help-height {
   height: 8.8em;
 }
@@ -604,7 +609,7 @@ a {
 }
 .footer__body {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .footer__logo {
@@ -685,13 +690,60 @@ a {
 .service__item {
   margin-top: 3em;
 }
-.service__title {
-  font-size: 1.2rem;
-  font-weight: normal;
-}
 .service__block {
   margin-top: 2em;
   font-size: 1.2rem;
   font-weight: 300;
   line-height: 1.3;
+}
+
+.object__item {
+  margin-top: 3em;
+  padding: 0 3.4em;
+  display: flex;
+}
+.object__img {
+  min-width: 12.8em;
+  margin-right: 2.4em;
+  padding-top: 2em;
+}
+.object__img img {
+  display: block;
+}
+.object__img img:nth-child(2) {
+  transform: translateY(-30px);
+}
+.object__img img:nth-child(3) {
+  transform: translateY(-60px);
+}
+.object__img img:nth-child(4) {
+  transform: translateY(-90px);
+}
+.object__img img:nth-child(5) {
+  transform: translateY(-120px);
+}
+.object__img img:nth-child(6) {
+  transform: translateY(-150px);
+}
+.object__img img:nth-child(7) {
+  transform: translateY(-180px);
+}
+.object__img img:nth-child(8) {
+  transform: translateY(-210px);
+}
+.object__img img:nth-child(even) {
+  margin-left: auto;
+}
+.object__block {
+  margin-top: 1.6em;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.3;
+}
+.object__block ul {
+  padding-left: 1.6em;
+  list-style: disc;
+}
+.object__block li::marker {
+  font-size: 0.5em;
 }
