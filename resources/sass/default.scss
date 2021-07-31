@@ -5,6 +5,7 @@ $black: black;
 $darkGray: #333;
 $lightGray: #dcdadb;
 $darkBlue: #163069;
+$blue: #3166d0;
 $lightBlue: #bdd0f5;
 
 html {
@@ -16,6 +17,7 @@ html {
 }
 
 body {
+    min-height: 100vh;
     position: relative;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 1rem;
@@ -91,6 +93,15 @@ a {
     font-weight: normal;
 }
 
-.help-height {
+.help-height-top {
     height: 8.8em;
+}
+
+.help-height-bottom {
+    height: 13.2em;
+}
+
+// Helpers
+.text-center {
+    text-align: center !important;
 }

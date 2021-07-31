@@ -1,4 +1,4 @@
-<div class="certificate">
+<section class="certificate">
     <div class="container">
         <h1 class="title-section">Сертификаты</h1>
 
@@ -28,4 +28,4 @@
             </div>
         </div>
     </div>
-</div>
+</section>

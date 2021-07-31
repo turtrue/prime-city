@@ -1,4 +1,4 @@
-<div class="partner">
+<section class="partner">
     <div class="container">
         <h1 class="title-section">Партнеры</h1>
 
@@ -23,4 +23,4 @@
             </div>
         </div>
     </div>
-</div>
+</section>

@@ -24,3 +24,15 @@ Route::get('/services', function () {
 Route::get('/objects', function () {
     return view('objects');
 });
+
+Route::get('/news', function () {
+    return view('news');
+});
+
+Route::get('/vacancies', function () {
+    return view('vacancies');
+});
+
+Route::get('/contacts', function () {
+    return view('contacts');
+});

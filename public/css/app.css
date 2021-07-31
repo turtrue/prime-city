@@ -349,6 +349,7 @@ html {
 }
 
 body {
+  min-height: 100vh;
   position: relative;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1rem;
@@ -414,8 +415,16 @@ a {
   font-weight: normal;
 }
 
-.help-height {
+.help-height-top {
   height: 8.8em;
+}
+
+.help-height-bottom {
+  height: 13.2em;
+}
+
+.text-center {
+  text-align: center !important;
 }
 
 .header {
@@ -669,7 +678,7 @@ a {
   background: white;
   box-shadow: 0px 2.63415px 2.63415px rgba(0, 0, 0, 0.25);
   border-radius: 50%;
-  transition: background 0.1s ease;
+  transition: background 0.1s linear;
 }
 .slider__arrow:hover {
   background: #bdd0f5;
@@ -746,4 +755,99 @@ a {
 }
 .object__block li::marker {
   font-size: 0.5em;
+}
+
+.new__body {
+  margin-top: 4.6em;
+}
+.new__body button {
+  margin: 2.2em auto 0;
+  padding: 0.4em 0.9em;
+  display: block;
+  font-size: 2rem;
+  color: white;
+  background: #3166d0;
+  border-radius: 0.2em;
+}
+.new__item {
+  margin-left: 1.8em;
+  padding: 1em;
+  max-width: 27.6em;
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: 300;
+  border: 1px solid #333;
+  border-radius: 0 0.33em 0.33em 0.33em;
+  background: white;
+}
+.new__item + .new__item {
+  margin-top: 2.66em;
+}
+.new__triangle {
+  width: 1.8em;
+  height: 1.8em;
+  position: absolute;
+  top: -1px;
+  left: -1.8em;
+  border-top: 1px solid #333;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 50%, white 51%, white 100%);
+}
+.new__triangle::before {
+  content: "";
+  width: 2.546em;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  border-top: 1px solid #333;
+  transform-origin: top left;
+  transform: rotate(45deg);
+}
+
+.vacancy__body {
+  margin-top: 4.2em;
+}
+.vacancy__item {
+  display: flex;
+  align-items: center;
+}
+.vacancy__item + .vacancy__item {
+  margin-top: 3.6em;
+}
+.vacancy__text {
+  width: 17.5em;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.vacancy__button {
+  flex: 1;
+  text-align: center;
+}
+.vacancy__button button {
+  padding: 0.6em 1em;
+  color: white;
+  background: #3166d0;
+  border-radius: 0.4em;
+  transition: background 0.1s linear;
+}
+.vacancy__button button:hover {
+  background: #163069;
+}
+
+.contact__body {
+  margin-top: 3em;
+}
+.contact__item {
+  max-width: 32.33em;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.contact__item + .contact__item {
+  margin-top: 1.2em;
+}
+
+.map {
+  margin-top: 4.2em;
+}
+.map__body {
+  margin-top: 3em;
 }
