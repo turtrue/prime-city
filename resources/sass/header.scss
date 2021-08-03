@@ -18,12 +18,26 @@
         color: $white;
         background: $darkBlue;
 
+        .header__menu {
+            &:hover {
+                color: $lightBlue;
+
+                hr {
+                    background: $lightBlue;
+                }
+            }
+        }
+
         hr {
             background: $white;
         }
 
         a {
             color: $white;
+
+            &:hover {
+                color: $lightBlue;
+            }
         }
 
         .nav {
@@ -44,6 +58,14 @@
         font-weight: 300;
         text-transform: uppercase;
         cursor: pointer;
+
+        &:hover {
+            color: $black;
+
+            hr {
+                background: $black;
+            }
+        }
 
         button {
             margin-right: 0.2em;

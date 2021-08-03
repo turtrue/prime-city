@@ -10,12 +10,18 @@
             color: $white;
             background: $blue;
             border-radius: 0.2em;
+            transition: background 0.1s linear;
+
+            &:hover {
+                background: $darkBlue;
+            }
         }
     }
 
     &__item {
         margin-left: 1.8em;
         padding: 1em;
+        min-height: 10em;
         max-width: 27.6em;
         position: relative;
         font-size: 1.2rem;

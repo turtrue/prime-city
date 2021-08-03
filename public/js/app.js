@@ -1,13 +1,154 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./resources/js/advantage.js":
+/*!***********************************!*\
+  !*** ./resources/js/advantage.js ***!
+  \***********************************/
+/***/ (() => {
+
+var paragraph = document.querySelector('#advantage-paragraph');
+
+if (paragraph) {
+  var text = ['Собственный парк спецтехники', 'Квалифицированный персонал', 'Собственная мобильная лаборатория неразрушающего контроля', 'Индивидуальный подход в решении каждого вопроса', 'Более десяти лет успешной реализации проектов по обустройству нефтяных и газовых месторождений на всей территории Российской федерации'];
+  var counter = 0;
+  setInterval(function () {
+    paragraph.classList.add('hide');
+    setTimeout(function () {
+      paragraph.textContent = text[counter];
+      paragraph.classList.remove('hide');
+    }, 700);
+    counter++;
+    if (counter >= text.length) counter = 0;
+  }, 5000);
+}
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
   \*****************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+__webpack_require__(/*! ./header */ "./resources/js/header.js");
+
+__webpack_require__(/*! ./advantage */ "./resources/js/advantage.js");
+
+__webpack_require__(/*! ./object */ "./resources/js/object.js");
+
+__webpack_require__(/*! ./slider */ "./resources/js/slider.js");
+
+/***/ }),
+
+/***/ "./resources/js/header.js":
+/*!********************************!*\
+  !*** ./resources/js/header.js ***!
+  \********************************/
 /***/ (() => {
 
-// require('./bootstrap');
+var burger = document.querySelector('#burger');
+var header = document.querySelector('#header');
+burger.addEventListener('click', function () {
+  header.classList.toggle('active');
+  document.body.classList.toggle('overflow-hidden');
+});
+
+/***/ }),
+
+/***/ "./resources/js/object.js":
+/*!********************************!*\
+  !*** ./resources/js/object.js ***!
+  \********************************/
+/***/ (() => {
+
+var images = document.querySelectorAll('.object__image');
+
+if (images.length) {
+  var reveal = function reveal() {
+    images.forEach(function (image) {
+      var windowHeight = window.innerHeight;
+      var imageTop = image.getBoundingClientRect().top;
+      var imagePoint = 150;
+
+      if (imageTop < windowHeight - imagePoint) {
+        image.classList.add('active');
+      }
+    });
+  };
+
+  window.addEventListener('scroll', reveal);
+}
+
+/***/ }),
+
+/***/ "./resources/js/slider.js":
+/*!********************************!*\
+  !*** ./resources/js/slider.js ***!
+  \********************************/
+/***/ (() => {
+
+var track = document.querySelector('.slider__track');
+
+if (track) {
+  var movingTrack = function movingTrack() {
+    track.style.transform = "translateX(-".concat(numbers[counter] * step, "%)");
+  };
+
+  var addClass = function addClass(array, cls) {
+    var currentItem = array[counter + 1];
+    currentItem.classList.add(cls);
+  };
+
+  var removeClass = function removeClass(array, cls) {
+    array.forEach(function (item) {
+      return item.classList.remove(cls);
+    });
+  };
+
+  var nextSlide = function nextSlide() {
+    removeClass(items, 'active');
+    addClass(items, 'active');
+    movingTrack();
+  };
+
+  var items = document.querySelectorAll('.slider__item');
+  var prev = document.querySelector('#slider-prev');
+  var next = document.querySelector('#slider-next');
+  var itemsLength = items.length; // Вычисление длины одного элемента слайдера
+
+  var widthItem = 100 / 3; // Установка длины трека
+
+  track.style.width = "".concat(widthItem * itemsLength, "%"); // Установка длины элементов слайдера
+
+  items.forEach(function (item) {
+    item.style.width = "".concat(widthItem, "%");
+  }); // Заполнение массива номерами элементов слайдера
+
+  var length = itemsLength - 2;
+  var numbers = Array.apply(null, {
+    length: length
+  }).map(Number.call, Number); // Вычисление одного шага
+
+  var step = 100 / itemsLength;
+  var counter = 1; // Начальная позиция трека
+
+  movingTrack(); // Кнопка назад
+
+  prev.addEventListener('click', function () {
+    if (counter <= 0) return;
+    counter--;
+    removeClass(items, 'active');
+    addClass(items, 'active');
+    nextSlide();
+  }); // Кнопка вперед
+
+  next.addEventListener('click', function () {
+    if (counter >= numbers.length - 1) return;
+    counter++;
+    nextSlide();
+  });
+}
 
 /***/ }),
 

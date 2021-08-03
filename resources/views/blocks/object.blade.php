@@ -4,15 +4,15 @@
             <h1 class="title-section title-section--min">Значимые объекты</h1>
 
             <div class="object__item">
-                <div class="object__img">
-                    <img src="{{ asset("img/object-1.jpg") }}" alt="строительный объект">
-                    <img src="{{ asset("img/object-2.jpg") }}" alt="строительный объект">
-                    <img src="{{ asset("img/object-3.jpg") }}" alt="строительный объект">
-                    <img src="{{ asset("img/object-4.jpg") }}" alt="строительный объект">
-                    <img src="{{ asset("img/object-5.jpg") }}" alt="строительный объект">
-                    <img src="{{ asset("img/object-6.jpg") }}" alt="строительный объект">
-                    <img src="{{ asset("img/object-7.jpg") }}" alt="строительный объект">
-                    <img src="{{ asset("img/object-8.jpg") }}" alt="строительный объект">
+                <div class="object__images">
+                    <img class="object__image active" src="{{ asset("img/object-1.jpg") }}" alt="строительный объект">
+                    <img class="object__image" src="{{ asset("img/object-2.jpg") }}" alt="строительный объект">
+                    <img class="object__image" src="{{ asset("img/object-3.jpg") }}" alt="строительный объект">
+                    <img class="object__image" src="{{ asset("img/object-4.jpg") }}" alt="строительный объект">
+                    <img class="object__image" src="{{ asset("img/object-5.jpg") }}" alt="строительный объект">
+                    <img class="object__image" src="{{ asset("img/object-6.jpg") }}" alt="строительный объект">
+                    <img class="object__image" src="{{ asset("img/object-7.jpg") }}" alt="строительный объект">
+                    <img class="object__image" src="{{ asset("img/object-8.jpg") }}" alt="строительный объект">
                 </div>
                 <div class="object__text">
                     <h2 class="title-item">Установка переработки нефти
@@ -50,9 +50,9 @@
             </div>
 
             <div class="object__item">
-                <div class="object__img">
-                    <img src="{{ asset("img/object-9.jpg") }}" alt="строительный объект">
-                    <img src="{{ asset("img/object-10.jpg") }}" alt="строительный объект">
+                <div class="object__images">
+                    <img class="object__image" src="{{ asset("img/object-9.jpg") }}" alt="строительный объект">
+                    <img class="object__image" src="{{ asset("img/object-10.jpg") }}" alt="строительный объект">
                 </div>
                 <div class="object__text">
                     <h2 class="title-item">Обустройство кустовых площадок и одиночных скважин Средне-Назымского и Галяновского месторождения</h2>
@@ -70,8 +70,8 @@
             </div>
 
             <div class="object__item">
-                <div class="object__img">
-                    <img src="{{ asset("img/object-11.jpg") }}" alt="строительный объект">
+                <div class="object__images">
+                    <img class="object__image" src="{{ asset("img/object-11.jpg") }}" alt="строительный объект">
                 </div>
                 <div class="object__text">
                     <h2 class="title-item">Пункт подготовки и сбора нефти (ППСН) Галяновского нефтяного месторождения</h2>
@@ -87,13 +87,13 @@
             </div>
 
             <div class="object__item">
-                <div class="object__img">
-                    <img src="{{ asset("img/object-12.jpg") }}" alt="строительный объект">
-                    <img src="{{ asset("img/object-13.jpg") }}" alt="строительный объект">
-                    <img src="{{ asset("img/object-14.jpg") }}" alt="строительный объект">
-                    <img src="{{ asset("img/object-15.jpg") }}" alt="строительный объект">
-                    <img src="{{ asset("img/object-16.jpg") }}" alt="строительный объект">
-                    <img src="{{ asset("img/object-17.jpg") }}" alt="строительный объект">
+                <div class="object__images">
+                    <img class="object__image" src="{{ asset("img/object-12.jpg") }}" alt="строительный объект">
+                    <img class="object__image" src="{{ asset("img/object-13.jpg") }}" alt="строительный объект">
+                    <img class="object__image" src="{{ asset("img/object-14.jpg") }}" alt="строительный объект">
+                    <img class="object__image" src="{{ asset("img/object-15.jpg") }}" alt="строительный объект">
+                    <img class="object__image" src="{{ asset("img/object-16.jpg") }}" alt="строительный объект">
+                    <img class="object__image" src="{{ asset("img/object-17.jpg") }}" alt="строительный объект">
                 </div>
                 <div class="object__text">
                     <h2 class="title-item">Выполнение строительно-монтажных работ по объектам ТПП «ТатРИТЭКнефть»: «Техническое перевооружение трубопроводов. 1 очередь «Разделы строительства: Л, АС, ГП</h2>
@@ -136,7 +136,7 @@
             </div>
 
             <div class="object__item">
-                <div class="object__img">
+                <div class="object__images">
                 </div>
                 <div class="object__text">
                     <h2 class="title-item">Замена дефектного участка нефтепровода межпромыслового «п. Андра-ПНС Красноленинский ПК16.9 км», «Подводный переход через р. Обь (резервная нитка) ПК 13.7 км»</h2>
@@ -153,10 +153,10 @@
             </div>
 
             <div class="object__item">
-                <div class="object__img">
-                    <img src="{{ asset("img/object-18.jpg") }}" alt="строительный объект">
-                    <img src="{{ asset("img/object-19.jpg") }}" alt="строительный объект">
-                    <img src="{{ asset("img/object-20.jpg") }}" alt="строительный объект">
+                <div class="object__images">
+                    <img class="object__image" src="{{ asset("img/object-18.jpg") }}" alt="строительный объект">
+                    <img class="object__image" src="{{ asset("img/object-19.jpg") }}" alt="строительный объект">
+                    <img class="object__image" src="{{ asset("img/object-20.jpg") }}" alt="строительный объект">
                 </div>
                 <div class="object__text">
                     <h2 class="title-item">Нефтегазосборные сети от т.вр. куста 217 до КУ №26 (МФНС) на месторождении им. В.Н. Виноградова</h2>
@@ -172,8 +172,8 @@
             </div>
 
             <div class="object__item">
-                <div class="object__img">
-                    <img src="{{ asset("img/object-21.jpg") }}" alt="строительный объект">
+                <div class="object__images">
+                    <img class="object__image" src="{{ asset("img/object-21.jpg") }}" alt="строительный объект">
                 </div>
                 <div class="object__text">
                     <h2 class="title-item">Напорный нефтепровод от МФНУ «Ново-Чегодайская» до УПСВН «Кармалка»</h2>
@@ -187,8 +187,8 @@
             </div>
 
             <div class="object__item">
-                <div class="object__img">
-                    <img src="{{ asset("img/object-22.jpg") }}" alt="строительный объект">
+                <div class="object__images">
+                    <img class="object__image" src="{{ asset("img/object-22.jpg") }}" alt="строительный объект">
                 </div>
                 <div class="object__text">
                     <h2 class="title-item">Система размещения очищенной попутно-добываемой воды с очистных сооружений УПСВН «Кармалка» и стоков с УППДВ «Кармалка» в систему поддержания пластового давления»</h2>
@@ -205,8 +205,8 @@
             </div>
 
             <div class="object__item">
-                <div class="object__img">
-                    <img src="{{ asset("img/object-23.jpg") }}" alt="строительный объект">
+                <div class="object__images">
+                    <img class="object__image" src="{{ asset("img/object-23.jpg") }}" alt="строительный объект">
                 </div>
                 <div class="object__text">
                     <h2 class="title-item">Техническое перевооружение наливной эстакады пункта налива, ж/д ст. Сергино</h2>

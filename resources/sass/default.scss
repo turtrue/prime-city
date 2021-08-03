@@ -54,6 +54,7 @@ h6 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 ul {
@@ -69,6 +70,11 @@ button {
 a {
     color: $darkGray;
     text-decoration: none;
+    transition: color 0.1s linear;
+
+    &:hover {
+        color: $black;
+    }
 }
 
 .container {
@@ -104,4 +110,8 @@ a {
 // Helpers
 .text-center {
     text-align: center !important;
+}
+
+.overflow-hidden {
+    overflow: hidden;
 }

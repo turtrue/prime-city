@@ -5,23 +5,26 @@
         display: flex;
     }
 
-    &__img {
+    &__images {
         min-width: 12.8em;
         margin-right: 2.4em;
         padding-top: 2em;
+    }
 
-        img {
-            display: block;
+    &__image {
+        display: block;
+        opacity: 0;
+        transition: opacity 1s ease, transform 1s ease;
 
-            @for $index from 2 to 9 {
-                &:nth-child(#{$index}) {
-                    transform: translateY(-30px * $index + 30px);
-                }
+        @for $index from 1 to 9 {
+            &.active:nth-child(#{$index}) {
+                opacity: 1;
+                transform: translateY(-30px * $index + 30px);
             }
+        }
 
-            &:nth-child(even) {
-                margin-left: auto;
-            }
+        &:nth-child(even) {
+            margin-left: auto;
         }
     }
 
