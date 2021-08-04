@@ -39,6 +39,15 @@ body {
             rgba($white, 0.5) 95%,
             rgba($white, 0) 100%
         );
+
+        @media (max-width: 800px) {
+            background: linear-gradient(
+                90deg,
+                rgba($white, 0.9) 0%,
+                rgba($white, 1) 50%,
+                rgba($white, 0.9) 100%
+            );
+        }
     }
 }
 
@@ -70,7 +79,6 @@ button {
 a {
     color: $darkGray;
     text-decoration: none;
-    transition: color 0.1s linear;
 
     &:hover {
         color: $black;
@@ -88,8 +96,12 @@ a {
     font-weight: 400;
     text-align: center;
 
+    @media (max-width: 600px) {
+        font-size: 2rem;
+    }
+
     &--min {
-        font-size: 2em;
+        font-size: 2rem;
         text-align: initial;
     }
 }

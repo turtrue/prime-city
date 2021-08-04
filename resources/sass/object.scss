@@ -3,12 +3,23 @@
         margin-top: 3em;
         padding: 0 3.4em;
         display: flex;
+
+        @media (max-width: 1200px) {
+            padding: 0;
+            display: block;
+        }
     }
 
     &__images {
         min-width: 12.8em;
         margin-right: 2.4em;
         padding-top: 2em;
+
+        @media (max-width: 1200px) {
+            margin: 0 0 2em 0;
+            padding: 0;
+            min-width: initial;
+        }
     }
 
     &__image {
@@ -23,8 +34,27 @@
             }
         }
 
+        @media (max-width: 1200px) {
+            display: inline-block;
+            opacity: 1;
+
+            @for $index from 1 to 9 {
+                &.active:nth-child(#{$index}) {
+                    transform: translateY(0);
+                }
+            }
+        }
+
+        @media (max-width: 450px) {
+            width: 49%;
+        }
+
         &:nth-child(even) {
             margin-left: auto;
+
+            @media (max-width: 1200px) {
+                margin-left: 0;
+            }
         }
     }
 
