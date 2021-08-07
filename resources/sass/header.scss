@@ -1,9 +1,10 @@
 .header {
     padding: 2.4em 0 3.2em;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
+    z-index: 1000;
     background: linear-gradient(
         180deg,
         rgba($lightGray, 1) 0%,
@@ -11,20 +12,59 @@
         rgba($lightGray, 0) 100%
     );
 
+    @media (max-width: 450px) {
+        padding: 1em 0 1.5em;
+    }
+
+    &.sticky {
+        padding: 1em 0 1.5em;
+
+        .header__menu {
+            font-size: 0.8rem;
+
+            @media (max-width: 450px) {
+                font-size: 1.5rem;
+            }
+        }
+
+        .header__logo {
+            img {
+                width: 1.4em;
+            }
+
+            h1 {
+                font-size: 1.2rem;
+            }
+        }
+
+        .header__contact {
+            font-size: 0.6rem;
+
+            @media (max-width: 450px) {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
     &.active {
-        position: fixed;
         bottom: 0;
-        z-index: 1000;
         color: $white;
         background: $darkBlue;
 
         .header__menu {
+            font-size: 1rem;
+            transition: initial;
+
             &:hover {
                 color: $lightBlue;
 
                 hr {
                     background: $lightBlue;
                 }
+            }
+
+            @media (max-width: 450px) {
+                font-size: 1.5rem;
             }
         }
 
@@ -38,6 +78,31 @@
             &:hover {
                 color: $lightBlue;
             }
+        }
+
+        .header__logo {
+            img {
+                width: 2.4em;
+                transition: initial;
+
+                @media (max-width: 450px) {
+                    width: 1.4em;
+                }
+            }
+
+            h1 {
+                font-size: 1.4rem;
+                transition: initial;
+
+                @media (max-width: 450px) {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .header__contact {
+            font-size: 0.8rem;
+            transition: initial;
         }
 
         .nav {
@@ -58,6 +123,7 @@
         font-weight: 300;
         text-transform: uppercase;
         cursor: pointer;
+        transition: font-size 0.1s ease;
 
         &:hover {
             color: $black;
@@ -68,6 +134,8 @@
         }
 
         @media (max-width: 450px) {
+            font-size: 1.5rem;
+
             span {
                 display: none;
             }
@@ -104,6 +172,7 @@
         img {
             margin-right: 0.8em;
             width: 2.4em;
+            transition: width 0.1s ease;
 
             @media (max-width: 450px) {
                 width: 1.4em;
@@ -114,6 +183,7 @@
             font-size: 1.4rem;
             text-transform: uppercase;
             white-space: nowrap;
+            transition: font-size 0.1s ease;
 
             @media (max-width: 450px) {
                 font-size: 1.2rem;
@@ -129,6 +199,7 @@
     &__contact {
         font-size: 0.8rem;
         font-weight: 300;
+        transition: font-size 0.1s ease;
 
         @media (max-width: 800px) {
             div {

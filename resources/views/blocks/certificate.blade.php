@@ -1,4 +1,5 @@
 <section class="certificate">
+    <div id="section-2" class="section-link"></div>
     <div class="container">
         <h1 class="title-section">Сертификаты</h1>
 

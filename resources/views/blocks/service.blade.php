@@ -4,6 +4,8 @@
             <h1 class="title-section title-section--min">Наши услуги</h1>
 
             <div class="service__item">
+                <div id="section" class="section-link"></div>
+
                 <h2 class="title-item">Обустройство газовых и нефтяных месторождений</h2>
 
                 <div class="service__block">
@@ -55,6 +57,8 @@
             </div>
 
             <div class="service__item">
+                <div id="section-2" class="section-link"></div>
+
                 <h2 class="title-item">Прокладка и монтаж трубопроводов</h2>
 
                 <div class="service__block">
@@ -90,6 +94,8 @@
             </div>
 
             <div class="service__item">
+                <div id="section-3" class="section-link"></div>
+
                 <h2 class="title-item">Строительство и монтаж ВЛ до 220кВ</h2>
 
                 <div class="service__block">
@@ -117,6 +123,8 @@
             </div>
 
             <div class="service__item">
+                <div id="section-4" class="section-link"></div>
+
                 <h2 class="title-item">Общественные работы</h2>
 
                 <div class="service__block">
@@ -152,6 +160,8 @@
             </div>
 
             <div class="service__item">
+                <div id="section-5" class="section-link"></div>
+
                 <h2 class="title-item">Мобильная лаборатория НК</h2>
 
                 <div class="service__block">
@@ -165,6 +175,8 @@
         </section>
 
         <div class="service__section">
+            <div id="section-6" class="section-link"></div>
+
             <h1 class="title-section title-section--min">Аренда спецтехники</h1>
         </div>
     </div>

@@ -87,6 +87,18 @@ a {
     margin: 0 auto;
     padding: 0 0.6em;
     max-width: 1200px;
+
+    &--media-advantage {
+        @media (max-width: 800px) {
+            flex: 1;
+        }
+    }
+}
+
+.section-link {
+    position: relative;
+    top: -6em;
+    visibility: hidden;
 }
 
 .title-section {

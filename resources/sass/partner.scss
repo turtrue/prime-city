@@ -1,5 +1,9 @@
 .partner {
-    margin-top: 1.6em;
+    margin-top: 5.2em;
+
+    @media (max-width: 800px) {
+        margin-top: 0;
+    }
 
     &__body {
         margin: 0 auto;

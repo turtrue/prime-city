@@ -49,6 +49,22 @@ __webpack_require__(/*! ./slider */ "./resources/js/slider.js");
 
 var burger = document.querySelector('#burger');
 var header = document.querySelector('#header');
+var nav = document.querySelector('.nav');
+window.addEventListener('scroll', menuFixed);
+menuFixed();
+
+function menuFixed() {
+  header.classList.toggle('sticky', window.scrollY > 0);
+}
+
+nav.addEventListener('click', function (event) {
+  var isLink = event.target.classList.contains('nav__link');
+
+  if (isLink) {
+    header.classList.remove('active');
+    document.body.classList.remove('overflow-hidden');
+  }
+});
 burger.addEventListener('click', function () {
   header.classList.toggle('active');
   document.body.classList.toggle('overflow-hidden');

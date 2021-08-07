@@ -1,4 +1,5 @@
 <section class="partner">
+    <div id="section" class="section-link"></div>
     <div class="container">
         <h1 class="title-section">Партнеры</h1>
 

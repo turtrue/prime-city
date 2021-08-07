@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
-    <link rel="stylesheet" href={{ asset("css/app.css") }}>
+    <link rel="stylesheet" href={{ asset("css/app-1428.css") }}>
     <link rel="icon" type="image/png" href="{{ asset("img/favicon.png") }}">
 </head>
 
@@ -41,24 +41,24 @@
                 <div class="nav__body">
                     <ul>
                         <li class="nav__title">Главная</li>
-                        <li><a href="{{ route('index') }}">Сертификаты</a></li>
-                        <li><a href="{{ route('index') }}">Партнеры</a></li>
+                        <li><a class="nav__link" href="{{ route('index') . '#section' }}">Партнеры</a></li>
+                        <li><a class="nav__link" href="{{ route('index') . '#section-2' }}">Сертификаты</a></li>
                     </ul>
                     <ul>
                         <li class="nav__title">Наши услуги</li>
-                        <li><a href="{{ route('services') }}">Обустройство газовых и нефтяных месторождений</a></li>
-                        <li><a href="{{ route('services') }}">Прокладка и монтаж трубопроводов различной степени отвественности</a></li>
-                        <li><a href="{{ route('services') }}">Строительство и монтаж ВЛ до 220 кв</a></li>
-                        <li><a href="{{ route('services') }}">Общестроительные работы</a></li>
-                        <li><a href="{{ route('services') }}">Аренда спецтехники</a></li>
-                        <li><a href="{{ route('services') }}">Мобильная лаборатория НК</a></li>
+                        <li><a class="nav__link" href="{{ route('services') . '#section' }}">Обустройство газовых и нефтяных месторождений</a></li>
+                        <li><a class="nav__link" href="{{ route('services') . '#section-2' }}">Прокладка и монтаж трубопроводов различной степени отвественности</a></li>
+                        <li><a class="nav__link" href="{{ route('services') . '#section-3' }}">Строительство и монтаж ВЛ до 220 кв</a></li>
+                        <li><a class="nav__link" href="{{ route('services') . '#section-4' }}">Общестроительные работы</a></li>
+                        <li><a class="nav__link" href="{{ route('services') . '#section-5' }}">Мобильная лаборатория НК</a></li>
+                        <li><a class="nav__link" href="{{ route('services') . '#section-6' }}">Аренда спецтехники</a></li>
                     </ul>
                     <ul>
                         <li class="nav__title">О компании</li>
-                        <li><a href="{{ route('objects') }}">Значимые объекты</a></li>
-                        <li><a href="{{ route('news') }}">Новости</a></li>
-                        <li><a href="{{ route('vacancies') }}">Вакансии</a></li>
-                        <li><a href="{{ route('contacts') }}">Контакты</a></li>
+                        <li><a class="nav__link" href="{{ route('objects') }}">Значимые объекты</a></li>
+                        <li><a class="nav__link" href="{{ route('news') }}">Новости</a></li>
+                        <li><a class="nav__link" href="{{ route('vacancies') }}">Вакансии</a></li>
+                        <li><a class="nav__link" href="{{ route('contacts') }}">Контакты</a></li>
                     </ul>
                 </div>
             </div>
@@ -90,7 +90,7 @@
     </footer>
     <div class="help-height-bottom"></div>
 
-    <script src="{{ asset("js/app.js") }}"></script>
+    <script src="{{ asset("js/app-1428.js") }}"></script>
 </body>
 
 </html>
