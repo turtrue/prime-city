@@ -92,6 +92,10 @@ a {
         @media (max-width: 800px) {
             flex: 1;
         }
+
+        @media (max-width: 450px) {
+            transform: translateY(-3.1em);
+        }
     }
 }
 

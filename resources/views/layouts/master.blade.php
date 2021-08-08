@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
-    <link rel="stylesheet" href={{ asset("css/app-1428.css") }}>
+    <link rel="stylesheet" href={{ asset("css/app.css") }}>
     <link rel="icon" type="image/png" href="{{ asset("img/favicon.png") }}">
 </head>
 
@@ -90,7 +90,7 @@
     </footer>
     <div class="help-height-bottom"></div>
 
-    <script src="{{ asset("js/app-1428.js") }}"></script>
+    <script src="{{ asset("js/app.js") }}"></script>
 </body>
 
 </html>
