@@ -21,7 +21,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="{{ route('index') }}">Главная</a>
+                        <a @routeActive('admin') href="{{ route('admin') }}">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a @routeActive('admin.news') href="{{ route('admin.news') }}">Новости</a>
                     </li>
                 </ul>
 

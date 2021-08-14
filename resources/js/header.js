@@ -2,12 +2,12 @@ const burger = document.querySelector('#burger');
 const header = document.querySelector('#header');
 const nav = document.querySelector('.nav');
 
-window.addEventListener('scroll', menuFixed);
+// window.addEventListener('scroll', menuFixed);
 
-menuFixed();
-function menuFixed() {
-    header.classList.toggle('sticky', window.scrollY > 0);
-}
+// menuFixed();
+// function menuFixed() {
+//     header.classList.toggle('sticky', window.scrollY > 0);
+// }
 
 nav.addEventListener('click', event => {
     const isLink = event.target.classList.contains('nav__link');

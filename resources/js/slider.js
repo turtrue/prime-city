@@ -23,7 +23,7 @@ if (track) {
 
     // Вычисление одного шага
     const step = 100 / itemsLength;
-    let counter = 1;
+    let counter = 0;
 
     // Начальная позиция трека
     movingTrack();

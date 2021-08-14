@@ -1,5 +1,5 @@
 .header {
-    padding: 2.4em 0 3.2em;
+    padding: 1em 0 1.5em;
     position: fixed;
     top: 0;
     right: 0;
@@ -12,49 +12,12 @@
         rgba($lightGray, 0) 100%
     );
 
-    @media (max-width: 450px) {
-        padding: 1em 0 1.5em;
-    }
-
-    &.sticky {
-        padding: 1em 0 1.5em;
-
-        .header__menu {
-            font-size: 0.8rem;
-
-            @media (max-width: 450px) {
-                font-size: 1.5rem;
-            }
-        }
-
-        .header__logo {
-            img {
-                width: 1.4em;
-            }
-
-            h1 {
-                font-size: 1.2rem;
-            }
-        }
-
-        .header__contact {
-            font-size: 0.6rem;
-
-            @media (max-width: 450px) {
-                font-size: 0.8rem;
-            }
-        }
-    }
-
     &.active {
         bottom: 0;
         color: $white;
         background: $darkBlue;
 
         .header__menu {
-            font-size: 1rem;
-            transition: initial;
-
             &:hover {
                 color: $lightBlue;
 
@@ -82,27 +45,16 @@
 
         .header__logo {
             img {
-                width: 2.4em;
-                transition: initial;
-
                 @media (max-width: 450px) {
                     width: 1.4em;
                 }
             }
 
             h1 {
-                font-size: 1.4rem;
-                transition: initial;
-
                 @media (max-width: 450px) {
                     font-size: 1.2rem;
                 }
             }
-        }
-
-        .header__contact {
-            font-size: 0.8rem;
-            transition: initial;
         }
 
         .nav {
@@ -119,11 +71,10 @@
     &__menu {
         display: flex;
         align-items: center;
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-weight: 300;
         text-transform: uppercase;
         cursor: pointer;
-        transition: font-size 0.1s ease;
 
         &:hover {
             color: $black;
@@ -171,23 +122,13 @@
 
         img {
             margin-right: 0.8em;
-            width: 2.4em;
-            transition: width 0.1s ease;
-
-            @media (max-width: 450px) {
-                width: 1.4em;
-            }
+            width: 1.4em;
         }
 
         h1 {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             text-transform: uppercase;
             white-space: nowrap;
-            transition: font-size 0.1s ease;
-
-            @media (max-width: 450px) {
-                font-size: 1.2rem;
-            }
         }
 
         h2 {
@@ -197,14 +138,17 @@
     }
 
     &__contact {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         font-weight: 300;
-        transition: font-size 0.1s ease;
 
         @media (max-width: 800px) {
             div {
                 margin-top: 1em;
             }
+        }
+
+        @media (max-width: 450px) {
+            font-size: 0.8rem;
         }
 
         address {

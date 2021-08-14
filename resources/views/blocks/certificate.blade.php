@@ -7,13 +7,7 @@
             <div class="slider">
                 <div class="slider__track">
                     <div class="slider__item"></div>
-                    <div class="slider__item">
-                        <img src="/img/certificate.jpg" alt="сертификат">
-                    </div>
                     <div class="slider__item active">
-                        <img src="/img/certificate-2.jpg" alt="сертификат">
-                    </div>
-                    <div class="slider__item">
                         <img src="/img/certificate-3.jpg" alt="сертификат">
                     </div>
                     <div class="slider__item">

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\NewsController;
 use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
@@ -26,6 +27,7 @@ Route::middleware(['auth'])->group(function () {
         'namespace' => 'Admin',
         'prefix' => 'admin'
     ], function () {
+        Route::get('/', [AdminController::class, 'index'])->name('admin');
         Route::get('/news', [NewsController::class, 'index'])->name('admin.news');
     });
 });

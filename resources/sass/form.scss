@@ -1,0 +1,51 @@
+.form {
+    padding: 2em;
+    width: 50%;
+    position: relative;
+    background: $white;
+    border-radius: 0.4em;
+
+    &__group {
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-bottom: 0.5em;
+    }
+
+    input {
+        padding: 0.2em;
+        border: none;
+        border-bottom: 1px solid $darkGray;
+    }
+
+    input[type="file"] {
+        border: none;
+    }
+
+    &__button {
+        text-align: right;
+    }
+
+    button {
+        padding: 0.6em 1em;
+        color: $white;
+        background: $blue;
+        border-radius: 0.4em;
+        transition: background 0.1s linear;
+
+        &:hover {
+            background: $darkBlue;
+        }
+    }
+
+    &__close {
+        padding: 0.6em 0.5em;
+        position: absolute;
+        top: 0.5em;
+        right: 0.5em;
+        line-height: 0;
+    }
+}

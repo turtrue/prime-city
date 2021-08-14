@@ -5,13 +5,13 @@
         <div class="advantage__body">
             <div class="advantage__icons">
                 <div>
-                    <img class="advantage__icon" src="{{ asset("img/advantage-icon.svg") }}" alt="преимущество">
+                    <img class="advantage__icon" src="{{ asset("img/advantage--icon.svg") }}" alt="преимущество">
                 </div>
                 <div>
-                    <img class="advantage__icon" src="{{ asset("img/advantage-icon-2.svg") }}" alt="преимущество">
+                    <img class="advantage__icon" src="{{ asset("img/advantage--icon-2.svg") }}" alt="преимущество">
                 </div>
                 <div>
-                    <img class="advantage__icon" src="{{ asset("img/advantage-icon-3.svg") }}" alt="преимущество">
+                    <img class="advantage__icon" src="{{ asset("img/advantage--icon-3.svg") }}" alt="преимущество">
                 </div>
             </div>
 

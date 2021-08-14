@@ -64,6 +64,11 @@ h6 {
     -webkit-tap-highlight-color: transparent;
 }
 
+input {
+    outline: none;
+    color: $darkGray;
+}
+
 ul {
     list-style: none;
 }
@@ -91,10 +96,6 @@ a {
     &--media-advantage {
         @media (max-width: 800px) {
             flex: 1;
-        }
-
-        @media (max-width: 450px) {
-            transform: translateY(-3.1em);
         }
     }
 }
@@ -126,7 +127,11 @@ a {
 }
 
 .help-height-top {
-    height: 8.8em;
+    height: 5em;
+
+    @media (max-width: 800px) {
+        height: 7em;
+    }
 }
 
 .help-height-bottom {

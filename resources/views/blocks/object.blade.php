@@ -5,7 +5,7 @@
 
             <div class="object__item">
                 <div class="object__images">
-                    <img class="object__image active" src="{{ asset("img/object-1.jpg") }}" alt="строительный объект">
+                    <img class="object__image active" src="{{ asset("img/object.jpg") }}" alt="строительный объект">
                     <img class="object__image" src="{{ asset("img/object-2.jpg") }}" alt="строительный объект">
                     <img class="object__image" src="{{ asset("img/object-3.jpg") }}" alt="строительный объект">
                     <img class="object__image" src="{{ asset("img/object-4.jpg") }}" alt="строительный объект">

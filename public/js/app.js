@@ -49,13 +49,11 @@ __webpack_require__(/*! ./slider */ "./resources/js/slider.js");
 
 var burger = document.querySelector('#burger');
 var header = document.querySelector('#header');
-var nav = document.querySelector('.nav');
-window.addEventListener('scroll', menuFixed);
-menuFixed();
-
-function menuFixed() {
-  header.classList.toggle('sticky', window.scrollY > 0);
-}
+var nav = document.querySelector('.nav'); // window.addEventListener('scroll', menuFixed);
+// menuFixed();
+// function menuFixed() {
+//     header.classList.toggle('sticky', window.scrollY > 0);
+// }
 
 nav.addEventListener('click', function (event) {
   var isLink = event.target.classList.contains('nav__link');
@@ -147,7 +145,7 @@ if (track) {
   }).map(Number.call, Number); // Вычисление одного шага
 
   var step = 100 / itemsLength;
-  var counter = 1; // Начальная позиция трека
+  var counter = 0; // Начальная позиция трека
 
   movingTrack(); // Кнопка назад
 
