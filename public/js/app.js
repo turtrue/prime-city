@@ -39,6 +39,30 @@ __webpack_require__(/*! ./object */ "./resources/js/object.js");
 
 __webpack_require__(/*! ./slider */ "./resources/js/slider.js");
 
+__webpack_require__(/*! ./certificate */ "./resources/js/certificate.js");
+
+__webpack_require__(/*! ./modal */ "./resources/js/modal.js");
+
+/***/ }),
+
+/***/ "./resources/js/certificate.js":
+/*!*************************************!*\
+  !*** ./resources/js/certificate.js ***!
+  \*************************************/
+/***/ (() => {
+
+var images = document.querySelectorAll('.slider__item > img');
+var view = document.querySelector('.certificate__view > img');
+var modal = document.querySelector('.modal');
+images.forEach(function (img) {
+  img.addEventListener('click', function () {
+    var src = img.getAttribute('src');
+    view.setAttribute('src', src);
+    modal.classList.add('active');
+    document.body.classList.add('overflow-hidden');
+  });
+});
+
 /***/ }),
 
 /***/ "./resources/js/header.js":
@@ -67,6 +91,28 @@ burger.addEventListener('click', function () {
   header.classList.toggle('active');
   document.body.classList.toggle('overflow-hidden');
 });
+
+/***/ }),
+
+/***/ "./resources/js/modal.js":
+/*!*******************************!*\
+  !*** ./resources/js/modal.js ***!
+  \*******************************/
+/***/ (() => {
+
+var modal = document.querySelector('.modal');
+
+if (modal) {
+  modal.addEventListener('click', function (event) {
+    var isModal = event.target.classList.contains('modal');
+    var isClose = event.target.classList.contains('modal__close');
+
+    if (isModal || isClose) {
+      modal.classList.remove('active');
+      document.body.classList.remove('overflow-hidden');
+    }
+  });
+}
 
 /***/ }),
 
@@ -103,8 +149,19 @@ if (images.length) {
 /***/ (() => {
 
 var track = document.querySelector('.slider__track');
+var prev = document.querySelector('#slider-prev');
+var next = document.querySelector('#slider-next');
 
 if (track) {
+  var btnVisible = function btnVisible(condition, firstBtn, secondBtn) {
+    if (condition) {
+      firstBtn.classList.add('hide');
+      secondBtn.classList.remove('hide');
+    } else {
+      secondBtn.classList.remove('hide');
+    }
+  };
+
   var movingTrack = function movingTrack() {
     track.style.transform = "translateX(-".concat(numbers[counter] * step, "%)");
   };
@@ -127,8 +184,11 @@ if (track) {
   };
 
   var items = document.querySelectorAll('.slider__item');
-  var prev = document.querySelector('#slider-prev');
-  var next = document.querySelector('#slider-next');
+
+  var _prev = document.querySelector('#slider-prev');
+
+  var _next = document.querySelector('#slider-next');
+
   var itemsLength = items.length; // Вычисление длины одного элемента слайдера
 
   var widthItem = 100 / 3; // Установка длины трека
@@ -149,17 +209,18 @@ if (track) {
 
   movingTrack(); // Кнопка назад
 
-  prev.addEventListener('click', function () {
-    if (counter <= 0) return;
+  _prev.addEventListener('click', function () {
     counter--;
-    removeClass(items, 'active');
-    addClass(items, 'active');
+    var condition = counter < 1;
+    btnVisible(condition, _prev, _next);
     nextSlide();
   }); // Кнопка вперед
 
-  next.addEventListener('click', function () {
-    if (counter >= numbers.length - 1) return;
+
+  _next.addEventListener('click', function () {
     counter++;
+    var condition = counter >= numbers.length - 1;
+    btnVisible(condition, _next, _prev);
     nextSlide();
   });
 }

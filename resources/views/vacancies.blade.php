@@ -4,5 +4,5 @@
 
 @section('content')
 @include('blocks.vacancy')
-@include('blocks.modal')
+@include('blocks.form')
 @endsection

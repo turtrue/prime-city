@@ -35,10 +35,15 @@
         background: $white;
         box-shadow: 0px 2.63415px 2.63415px rgba($black, 0.25);
         border-radius: 50%;
-        transition: background 0.1s linear;
+        transition: background 0.1s linear, opacity 0.5s ease;
 
         &:hover {
             background: $lightBlue;
+        }
+
+        &.hide {
+            pointer-events: none;
+            opacity: 0;
         }
 
         img {

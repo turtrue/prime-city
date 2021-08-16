@@ -78,7 +78,7 @@
                     </div>
                 </a>
                 <div class="footer__author">
-                    <a href="#">Design by Valentinapos</a>
+                    <a href="http://valentinapos.tilda.ws/" target="_blank">Design by Valentinapos</a>
                 </div>
                 <div class="footer__contact">
                     <address>Казань, ул. Х.Такташа, д. 78</address>

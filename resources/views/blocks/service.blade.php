@@ -6,7 +6,7 @@
             <div class="service__item">
                 <div id="section" class="section-link"></div>
 
-                <h2 class="title-item">Обустройство газовых и нефтяных месторождений</h2>
+                <h2 class="title-item text-center">Обустройство газовых и нефтяных месторождений</h2>
 
                 <div class="service__block">
                     <div>ООО “СК “Премьер-Сити” выполняет геодезические работы, выполняемые на строительных площадках:</div>
@@ -59,7 +59,7 @@
             <div class="service__item">
                 <div id="section-2" class="section-link"></div>
 
-                <h2 class="title-item">Прокладка и монтаж трубопроводов</h2>
+                <h2 class="title-item text-center">Прокладка и монтаж трубопроводов</h2>
 
                 <div class="service__block">
                     <div>Антикоррозийная защита металлических конструкций и поверхностей.</div>
@@ -96,7 +96,7 @@
             <div class="service__item">
                 <div id="section-3" class="section-link"></div>
 
-                <h2 class="title-item">Строительство и монтаж ВЛ до 220кВ</h2>
+                <h2 class="title-item text-center">Строительство и монтаж ВЛ до 220кВ</h2>
 
                 <div class="service__block">
                     <div>Все виды электромонтажных работ при строительстве, реконструкции, техническом перевооружении, ремонте жилых, общественных зданий, промышленных предприятий и энергетических объектов.</div>
@@ -125,7 +125,7 @@
             <div class="service__item">
                 <div id="section-4" class="section-link"></div>
 
-                <h2 class="title-item">Общественные работы</h2>
+                <h2 class="title-item text-center">Общественные работы</h2>
 
                 <div class="service__block">
                     <div>ООО “СК “Премьер-Сити” выполняет геодезические работы, выполняемые на строительных площадках:</div>
@@ -162,7 +162,7 @@
             <div class="service__item">
                 <div id="section-5" class="section-link"></div>
 
-                <h2 class="title-item">Мобильная лаборатория НК</h2>
+                <h2 class="title-item text-center">Мобильная лаборатория НК</h2>
 
                 <div class="service__block">
                     <div>ЛНК ООО ”СК “Премьер-Сити” занимаается проведением дефектоскопии строительных конструкций, трубопроводов, оборудования опасных производств, объектов котлонадзора, системы газоснабжения в России по следующим методам контроля:</div>

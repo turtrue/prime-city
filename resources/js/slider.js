@@ -1,4 +1,6 @@
 const track = document.querySelector('.slider__track');
+const prev = document.querySelector('#slider-prev');
+const next = document.querySelector('#slider-next');
 
 if (track) {
     const items = document.querySelectorAll('.slider__item');
@@ -30,19 +32,28 @@ if (track) {
 
     // Кнопка назад
     prev.addEventListener('click', () => {
-        if (counter <= 0) return;
         counter--;
-        removeClass(items, 'active');
-        addClass(items, 'active');
+        const condition = counter < 1;
+        btnVisible(condition, prev, next);
         nextSlide();
     });
 
     // Кнопка вперед
     next.addEventListener('click', () => {
-        if (counter >= numbers.length - 1) return;
         counter++;
+        const condition = counter >= numbers.length - 1;
+        btnVisible(condition, next, prev);
         nextSlide();
     });
+
+    function btnVisible(condition, firstBtn, secondBtn) {
+        if (condition) {
+            firstBtn.classList.add('hide');
+            secondBtn.classList.remove('hide');
+        } else {
+            secondBtn.classList.remove('hide');
+        }
+    }
 
     function movingTrack() {
         track.style.transform = `translateX(-${numbers[counter] * step}%)`;

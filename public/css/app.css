@@ -441,7 +441,7 @@ a:hover {
 }
 
 .title-item {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: normal;
 }
 
@@ -463,7 +463,7 @@ a:hover {
 }
 
 .overflow-hidden {
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 .header {
@@ -773,6 +773,17 @@ a:hover {
 .certificate__body {
   margin-top: 3.76em;
 }
+.certificate__img {
+  cursor: pointer;
+}
+.certificate__view {
+  position: relative;
+}
+.certificate__view img {
+  max-width: 90vw;
+  height: 100%;
+  max-height: 90vh;
+}
 
 .footer {
   padding: 3.2em 0 2.4em;
@@ -865,10 +876,14 @@ a:hover {
   background: white;
   box-shadow: 0px 2.63415px 2.63415px rgba(0, 0, 0, 0.25);
   border-radius: 50%;
-  transition: background 0.1s linear;
+  transition: background 0.1s linear, opacity 0.5s ease;
 }
 .slider__arrow:hover {
   background: #bdd0f5;
+}
+.slider__arrow.hide {
+  pointer-events: none;
+  opacity: 0;
 }
 .slider__arrow img {
   display: block;
@@ -901,10 +916,10 @@ a:hover {
 }
 
 .service__section + .service__section {
-  margin-top: 4.4em;
+  margin-top: 5em;
 }
 .service__item {
-  margin-top: 3em;
+  margin-top: 5em;
 }
 .service__block {
   margin-top: 2em;
@@ -1137,11 +1152,21 @@ a:hover {
   bottom: 0;
   left: 0;
   z-index: 10000;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.9);
-  display: none;
+}
+.modal.active {
+  display: flex;
+}
+.modal__close {
+  padding: 0.6em 0.5em;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  line-height: 0;
+  cursor: pointer;
 }
 
 .form {
@@ -1179,11 +1204,4 @@ a:hover {
 }
 .form button:hover {
   background: #163069;
-}
-.form__close {
-  padding: 0.6em 0.5em;
-  position: absolute;
-  top: 0.5em;
-  right: 0.5em;
-  line-height: 0;
 }
