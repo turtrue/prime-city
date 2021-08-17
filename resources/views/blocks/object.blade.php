@@ -1,3 +1,5 @@
+@extends('layouts.modal')
+
 <div class="object">
     <div class="container">
         <section class="object__section">
@@ -5,7 +7,7 @@
 
             <div class="object__item">
                 <div class="object__images">
-                    <img class="object__image active" src="{{ asset("img/object.jpg") }}" alt="строительный объект">
+                    <img class="object__image show" src="{{ asset("img/object.jpg") }}" alt="строительный объект">
                     <img class="object__image" src="{{ asset("img/object-2.jpg") }}" alt="строительный объект">
                     <img class="object__image" src="{{ asset("img/object-3.jpg") }}" alt="строительный объект">
                     <img class="object__image" src="{{ asset("img/object-4.jpg") }}" alt="строительный объект">
@@ -222,4 +224,11 @@
             </div>
         </section>
     </div>
+
+    @section('mcontent')
+    <div class="modal__view">
+        <img src="#" alt="сертификат">
+        <div class="modal__close">&times;</div>
+    </div>
+    @endsection
 </div>

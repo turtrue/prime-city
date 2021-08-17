@@ -52,11 +52,12 @@ __webpack_require__(/*! ./modal */ "./resources/js/modal.js");
 /***/ (() => {
 
 var images = document.querySelectorAll('.slider__item > img');
-var view = document.querySelector('.certificate__view > img');
 var modal = document.querySelector('.modal');
+var view = document.querySelector('.modal__view > img');
 images.forEach(function (img) {
   img.addEventListener('click', function () {
     var src = img.getAttribute('src');
+    src = src.replace(/.jpg/, "-full.jpg");
     view.setAttribute('src', src);
     modal.classList.add('active');
     document.body.classList.add('overflow-hidden');
@@ -123,21 +124,33 @@ if (modal) {
 /***/ (() => {
 
 var images = document.querySelectorAll('.object__image');
+var modal = document.querySelector('.modal');
+var view = document.querySelector('.modal__view > img');
 
 if (images.length) {
   var reveal = function reveal() {
-    images.forEach(function (image) {
+    images.forEach(function (img) {
       var windowHeight = window.innerHeight;
-      var imageTop = image.getBoundingClientRect().top;
-      var imagePoint = 150;
+      var imgTop = img.getBoundingClientRect().top;
+      var imgPoint = 150;
 
-      if (imageTop < windowHeight - imagePoint) {
-        image.classList.add('active');
+      if (imgTop < windowHeight - imgPoint) {
+        img.classList.add('show');
       }
     });
   };
 
   window.addEventListener('scroll', reveal);
+  reveal();
+  images.forEach(function (img) {
+    img.addEventListener('click', function () {
+      var src = img.getAttribute('src');
+      src = src.replace(/.jpg/, "-full.jpg");
+      view.setAttribute('src', src);
+      modal.classList.add('active');
+      document.body.classList.add('overflow-hidden');
+    });
+  });
 }
 
 /***/ }),

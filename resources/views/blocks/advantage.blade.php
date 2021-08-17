@@ -1,6 +1,6 @@
 <section class="advantage">
     <div class="container container--media-advantage">
-        <h1 class="title-section">Наши преимущества</h1>
+        <!-- <h1 class="title-section">Наши преимущества</h1> -->
 
         <div class="advantage__body">
             <div class="advantage__icons">

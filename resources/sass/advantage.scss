@@ -5,7 +5,7 @@
     &__body {
         margin: 1.8em auto 0;
         width: 32.4em;
-        height: calc(100vh - 10em);
+        height: calc(100vh - 8em);
         min-height: 350px;
         position: relative;
         background: center / cover url("/img/advantage-bg.jpg");
@@ -13,7 +13,7 @@
 
         @media (max-width: 800px) {
             width: 100%;
-            height: calc(100vh - 12em);
+            height: calc(100vh - 10em);
         }
     }
 

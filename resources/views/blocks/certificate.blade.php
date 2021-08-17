@@ -10,10 +10,10 @@
                 <div class="slider__track">
                     <div class="slider__item"></div>
                     <div class="slider__item active">
-                        <img class="certificate__img" src="/img/certificate-3.jpg" alt="сертификат">
+                        <img class="certificate__img" src="/img/certificate.jpg" alt="сертификат">
                     </div>
                     <div class="slider__item">
-                        <img class="certificate__img" src="/img/certificate-4.jpg" alt="сертификат">
+                        <img class="certificate__img" src="/img/certificate-2.jpg" alt="сертификат">
                     </div>
                     <div class="slider__item"></div>
                 </div>
@@ -29,8 +29,8 @@
     </div>
 
     @section('mcontent')
-    <div class="certificate__view">
-        <img src="/img/certificate-3.jpg" alt="сертификат">
+    <div class="modal__view">
+        <img src="#" alt="сертификат">
         <div class="modal__close">&times;</div>
     </div>
     @endsection

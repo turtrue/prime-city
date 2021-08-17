@@ -25,10 +25,11 @@
     &__image {
         display: block;
         opacity: 0;
+        cursor: pointer;
         transition: opacity 1s ease, transform 1s ease;
 
         @for $index from 1 to 9 {
-            &.active:nth-child(#{$index}) {
+            &.show:nth-child(#{$index}) {
                 opacity: 1;
                 transform: translateY(-30px * $index + 30px);
             }
@@ -39,7 +40,7 @@
             opacity: 1;
 
             @for $index from 1 to 9 {
-                &.active:nth-child(#{$index}) {
+                &.show:nth-child(#{$index}) {
                     transform: translateY(0);
                 }
             }
