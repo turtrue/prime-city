@@ -41,6 +41,8 @@ __webpack_require__(/*! ./slider */ "./resources/js/slider.js");
 
 __webpack_require__(/*! ./certificate */ "./resources/js/certificate.js");
 
+__webpack_require__(/*! ./vacancy */ "./resources/js/vacancy.js");
+
 __webpack_require__(/*! ./modal */ "./resources/js/modal.js");
 
 /***/ }),
@@ -237,6 +239,25 @@ if (track) {
     nextSlide();
   });
 }
+
+/***/ }),
+
+/***/ "./resources/js/vacancy.js":
+/*!*********************************!*\
+  !*** ./resources/js/vacancy.js ***!
+  \*********************************/
+/***/ (() => {
+
+var buttons = document.querySelectorAll('.vacancy__button > button');
+var modal = document.querySelector('.modal');
+var vacancy = document.querySelector('input[name=vacancy]');
+buttons.forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var value = btn.dataset.vacancy;
+    vacancy.setAttribute('value', value);
+    modal.classList.add('active');
+  });
+});
 
 /***/ }),
 

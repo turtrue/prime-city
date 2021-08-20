@@ -5,6 +5,10 @@
     background: $white;
     border-radius: 0.4em;
 
+    @media (max-width: 800px) {
+        width: 95vw;
+    }
+
     &__group {
         margin-bottom: 1em;
         display: flex;

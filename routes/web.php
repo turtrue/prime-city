@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MailController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\NewsController;
 use App\Http\Controllers\MainController;
@@ -39,6 +40,4 @@ Route::get('/news', [MainController::class, 'news'])->name('news');
 Route::get('/vacancies', [MainController::class, 'vacancies'])->name('vacancies');
 Route::get('/contacts', [MainController::class, 'contacts'])->name('contacts');
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post('/send-email', [MailController::class, 'sendEmail'])->name('sendEmail');

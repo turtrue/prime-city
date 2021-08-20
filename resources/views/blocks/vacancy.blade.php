@@ -2,35 +2,42 @@
     <div class="container">
         <h1 class="title-section title-section--min">Вакансии</h1>
 
+        <!-- @if ($message = Session::get('success')) -->
+
+        <!-- @endif -->
+        <div class="alert alert--success">
+            <b>Ваше резюме успешно отправлено!</b>
+        </div>
+
         <div class="vacancy__body">
             <div class="vacancy__item">
                 <div class="vacancy__text">Слесарь по контрольно-измерительным приборам и автоматике</div>
                 <div class="vacancy__button">
-                    <button>Отправить резюме</button>
+                    <button data-vacancy="Слесарь по контрольно-измерительным приборам и автоматике">Отправить резюме</button>
                 </div>
             </div>
             <div class="vacancy__item">
                 <div class="vacancy__text">Инженер-наладчик КИПиА</div>
                 <div class="vacancy__button">
-                    <button>Отправить резюме</button>
+                    <button data-vacancy="Инженер-наладчик КИПиА">Отправить резюме</button>
                 </div>
             </div>
             <div class="vacancy__item">
                 <div class="vacancy__text">Электрогазосварщик 5 разряда</div>
                 <div class="vacancy__button">
-                    <button>Отправить резюме</button>
+                    <button data-vacancy="Электрогазосварщик 5 разряда">Отправить резюме</button>
                 </div>
             </div>
             <div class="vacancy__item">
                 <div class="vacancy__text">Электромонтажник</div>
                 <div class="vacancy__button">
-                    <button>Отправить резюме</button>
+                    <button data-vacancy="Электромонтажник">Отправить резюме</button>
                 </div>
             </div>
             <div class="vacancy__item">
                 <div class="vacancy__text">Энергетик</div>
                 <div class="vacancy__button">
-                    <button>Отправить резюме</button>
+                    <button data-vacancy="Энергетик">Отправить резюме</button>
                 </div>
             </div>
         </div>
