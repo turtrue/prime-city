@@ -10,7 +10,7 @@ class MailController extends Controller
 {
     public function sendEmail(Request $request)
     {
-        $details = [
+        $data = [
             'name' => $request->name,
             'phone' => $request->phone,
             'email' => $request->email,
@@ -18,8 +18,8 @@ class MailController extends Controller
             'file' => $request->file
         ];
 
-        Mail::to('turaltrueandfalse@gmail.com')->send(new VacancyMail($details));
-
+        Mail::to('turaltrueandfalse@gmail.com')->send(new VacancyMail($data));
+        // info@premier-city.ru
         return back()->with('success', 'Ваше резюме успешно отправлено!');
     }
 }

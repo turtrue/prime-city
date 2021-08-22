@@ -25,6 +25,22 @@ if (paragraph) {
 
 /***/ }),
 
+/***/ "./resources/js/alert.js":
+/*!*******************************!*\
+  !*** ./resources/js/alert.js ***!
+  \*******************************/
+/***/ (() => {
+
+var alerts = document.querySelectorAll('.alert');
+alerts.forEach(function (alert) {
+  alert.classList.add('show');
+  setTimeout(function () {
+    alert.classList.remove('show');
+  }, 3000);
+});
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -44,6 +60,8 @@ __webpack_require__(/*! ./certificate */ "./resources/js/certificate.js");
 __webpack_require__(/*! ./vacancy */ "./resources/js/vacancy.js");
 
 __webpack_require__(/*! ./modal */ "./resources/js/modal.js");
+
+__webpack_require__(/*! ./alert */ "./resources/js/alert.js");
 
 /***/ }),
 

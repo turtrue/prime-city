@@ -5,3 +5,4 @@ require('./slider');
 require('./certificate');
 require('./vacancy');
 require('./modal');
+require('./alert');

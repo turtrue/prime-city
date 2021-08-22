@@ -1,7 +1,7 @@
 <html>
 
-<p><b>{{ $details['name'] }}</b></p>
-<p>{{ $details['phone'] }}</p>
-<p>{{ $details['email'] }}</p>
+<p><b>Имя: {{ $data['name'] }}</b></p>
+<p>Телефон: {{ $data['phone'] }}</p>
+<p>Электронная почта: {{ $data['email'] }}</p>
 
 </html>

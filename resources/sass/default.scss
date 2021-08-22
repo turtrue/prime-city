@@ -7,6 +7,7 @@ $lightGray: #dcdadb;
 $darkBlue: #163069;
 $blue: #3166d0;
 $lightBlue: #bdd0f5;
+$green: green;
 
 html {
     font-size: calc(1vw + 10.6px);
@@ -136,6 +137,28 @@ a {
 
 .help-height-bottom {
     height: 13.2em;
+}
+
+.alert {
+    padding: 1em 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10000;
+    text-align: center;
+    font-weight: 300;
+    background: $white;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease;
+
+    &.show {
+        transform: translateY(0);
+    }
+
+    &--success {
+        color: $green;
+    }
 }
 
 // Helpers

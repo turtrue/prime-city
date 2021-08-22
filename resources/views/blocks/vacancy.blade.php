@@ -2,12 +2,13 @@
     <div class="container">
         <h1 class="title-section title-section--min">Вакансии</h1>
 
-        <!-- @if ($message = Session::get('success')) -->
-
-        <!-- @endif -->
+        @if ($message = Session::get('success'))
         <div class="alert alert--success">
-            <b>Ваше резюме успешно отправлено!</b>
+            <div class="container">
+                <div>Ваше резюме успешно отправлено!</div>
+            </div>
         </div>
+        @endif
 
         <div class="vacancy__body">
             <div class="vacancy__item">

@@ -11,16 +11,16 @@ class VacancyMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $details;
+    public $data;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($details)
+    public function __construct($data)
     {
-        $this->details = $details;
+        $this->data = $data;
     }
 
     /**
@@ -30,11 +30,12 @@ class VacancyMail extends Mailable
      */
     public function build()
     {
-        $file = $this->details['file'];
+        $file = $this->data['file'];
         $path = public_path() . '/uploads/';
         $fileName = $file->getClientOriginalName();
         $file->move($path, $fileName);
-        $subject = 'Отклик на вакансию ' . $this->details['vacancy'];
+
+        $subject = 'Отклик на вакансию ' . $this->data['vacancy'];
 
         return $this->subject($subject)
             ->view('emails.vacancy')
